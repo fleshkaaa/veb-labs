@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Гудаш Максим</title>
+    <!-- 1. External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- 2. Internal CSS -->
+    <style>
+        .badge-status {
+            background-color: #10b981;
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="header-info">
+            <h1>Гудаш Максим Миколайович</h1>
+            <p class="subtitle">Студент спеціальності «Кібербезпека» | DevSecOps & Linux Enthusiast</p>
+        </div>
+        <!-- 3. Inline CSS -->
+        <span class="badge-status" style="letter-spacing: 0.5px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            Open to Work / Projects
+        </span>
+    </header>
+
+    <main class="cv-grid-container">
+        <!-- Ліва колонка -->
+        <aside class="sidebar">
+            <section class="card">
+                <h2>Контакти</h2>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:maksym.hudash@lpnu.ua">maksym.hudash@lpnu.ua</a></li>
+                    <li>GitHub: <a href="https://github.com/fleshkaaa" target="_blank">github.com/fleshkaaa</a></li>
+                    <li>Локація: Львівська обл., Україна</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Технічні навички</h2>
+                <ul class="skills-list">
+                    <li>Linux (Kali, Mint, Ubuntu Server)</li>
+                    <li>Docker, Portainer, Tailscale, Netdata</li>
+                    <li>Python (CVE-аналізатори, автоматизація), C#</li>
+                    <li>Мережева безпека (Nmap, Cisco Packet Tracer)</li>
+                    <li>Апаратна безпека (ESP32-S3, RF/NFC модулі)</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Права колонка -->
+        <div class="main-content">
+            <section class="card">
+                <h2>Досвід та проєкти</h2>
+                <article class="job-item">
+                    <h3>Адміністрування домашнього сервера (HomeLab)</h3>
+                    <p>Налаштування та підтримка Ubuntu Server, розгортання ізольованих сервісів у Docker-контейнерах, моніторинг навантаження через Netdata та організація захищеного віддаленого доступу через VPN Tailscale.</p>
+                </article>
+                <article class="job-item">
+                    <h3>Розробка скриптів безпеки та DIY-пристроїв</h3>
+                    <p>Написання Python-скриптів для автоматичного аудиту встановлених пакетів Linux за базою вразливостей NVD CVE. Проєктування портативного пристрою тестування безпеки на базі мікроконтролера ESP32-S3.</p>
+                </article>
+            </section>
+
+            <section class="card">
+                <h2>Освіта</h2>
+                <article class="edu-item">
+                    <h3>Національний університет «Львівська політехніка»</h3>
+                    <p>Інститут комп'ютерних технологій, автоматики та метрології (ІКТА), кафедра «Захист інформації». Група КБ-205, спеціальність 125 «Кібербезпека».</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 Гудаш М.М. Лабораторна робота №3 з дисципліни «Інтернет-безпека».</p>
+    </footer>
+
+</body>
+</html>

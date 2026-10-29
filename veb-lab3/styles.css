@@ -1,0 +1,122 @@
+/* 1. Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Селектори тегів */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+}
+
+/* 3. Селектор ID + Flexbox */
+#main-header {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #3b82f6;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: 32px;
+}
+
+/* 4. Селектори класів + Grid Layout */
+.subtitle {
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+.cv-grid-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+
+/* 5. Box Model (margin, padding, border) */
+.card {
+    background-color: #ffffff;
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-item, .edu-item {
+    margin-bottom: 16px;
+}
+
+.skills-list, .contact-list {
+    list-style-position: inside;
+}
+
+.skills-list li, .contact-list li {
+    margin-bottom: 8px;
+}
+
+/* 6. Селектори атрибутів */
+a[target="_blank"] {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a[href^="mailto:"] {
+    color: #0284c7;
+    text-decoration: underline;
+}
+
+/* 7. Псевдокласи */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    border-color: #93c5fd;
+}
+
+a:hover, a:focus {
+    color: #1d4ed8;
+    outline: none;
+}
+
+.skills-list li:first-child {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* 8. Медіазапит для мобільних екранів */
+@media (max-width: 768px) {
+    #main-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+        padding: 20px;
+    }
+
+    .cv-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
